@@ -7,7 +7,7 @@ On the server side:
 On client side
 
 	- some linux distro over raspberry
-	- bare x-server for running browser in kiosk mode(HTML), video player and image view program(or browser?)
+	- bare x-server for running browser in kiosk mode (HTML), video player and image view program (or browser?)
 	- python bootstrapping script which will configure client on startup via REST API
 	- some mechanism for reinitialization without reboot. For exmaple - tiny http server(on some port) which will wait command for reinitialization.
 NAS
@@ -16,7 +16,7 @@ NAS
 	- http server like Nginx for static content (image, video)
 	- Software for video streaming? I dont know now. It's difficult task to implement video streaming, but parallel downloading of large video files can cause large server load. But maybe not. Due to smart memory system of Linux kernel. If we need to synchronize video on many clients then we need this feature
 ## Scala & Python
-I like Scala so much because it's great multiparadigmal language(FP + OOP) with concise syntax and type safety. Scala brings the best of OOP and FP, best of compiling and scripting languages. But Python is OK too for tasks where scripting language more usable. I'll provide code samples on Scala and Python.
+I like Scala so much because it's great multiparadigmal language (FP + OOP) with concise syntax and type safety. Scala brings the best of OOP and FP, best of compiling and scripting languages. But Python is OK too for tasks where scripting language more usable. I'll provide code samples on Scala and Python.
 
 ## Task 1
 ```python
@@ -88,7 +88,7 @@ val sortRes = array.sorted.reverse.take(2).reduce(_ * _)
 import random
 import numpy
 
-array = [random.randint(0,10) for i in xrange(1000000)]
+array = [random.randint(0,10) for _ in xrange(1000000)]
 sorted = numpy.sort(array)
 res = sorted[-1] * sorted[-2]
 ```
@@ -102,7 +102,7 @@ best sorting algorithm for this dataset.
 
 About tests. It's very difficult question. Answer to this question depends on many factors.
 
-	- Have we money/ time for this?
+	- Have we money / time for this?
 	- Is it need? Some software REQUIRES test. For example firmware for X-ray machine or program for control intercontinental ballistic rocket. In some software tests are optional.
 	- What types of tests in question?
 	 * Unit
